@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"ccrledtest\startup_stm32f407xx.o"
+"ccrledtest\main.o"
+"ccrledtest\gpio.o"
+"ccrledtest\tim.o"
+"ccrledtest\stm32f4xx_it.o"
+"ccrledtest\stm32f4xx_hal_msp.o"
+"ccrledtest\stm32f4xx_hal_tim.o"
+"ccrledtest\stm32f4xx_hal_tim_ex.o"
+"ccrledtest\stm32f4xx_hal_rcc.o"
+"ccrledtest\stm32f4xx_hal_rcc_ex.o"
+"ccrledtest\stm32f4xx_hal_flash.o"
+"ccrledtest\stm32f4xx_hal_flash_ex.o"
+"ccrledtest\stm32f4xx_hal_flash_ramfunc.o"
+"ccrledtest\stm32f4xx_hal_gpio.o"
+"ccrledtest\stm32f4xx_hal_dma_ex.o"
+"ccrledtest\stm32f4xx_hal_dma.o"
+"ccrledtest\stm32f4xx_hal_pwr.o"
+"ccrledtest\stm32f4xx_hal_pwr_ex.o"
+"ccrledtest\stm32f4xx_hal_cortex.o"
+"ccrledtest\stm32f4xx_hal.o"
+"ccrledtest\stm32f4xx_hal_exti.o"
+"ccrledtest\system_stm32f4xx.o"
+--strict --scatter "CCRLEDTEST\CCRLEDTEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CCRLEDTEST.map" -o CCRLEDTEST\CCRLEDTEST.axf
